@@ -20,6 +20,7 @@ char *ft_strdup(char *str)
 	{
 		new_str[i] = str[i];
 	}
+	new_str[i] = 0;
 	return (new_str);
 }
 
@@ -42,5 +43,5 @@ char *get_next_line(int fd)
 	heap[i] = '\0';
 	if(nbyte <= 0 && i == 0)
 		return (0);
-	return(ft_strdup(heap));	
+	return ft_strdup(heap);	
 }
